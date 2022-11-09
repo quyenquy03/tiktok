@@ -365,14 +365,15 @@ var ParticlePool = (function() {
         margin-bottom: 5px;
         text-align: center;">
         <h4> ❤️ </h4>
-        <audio controls autoplay hidden src="asset/nhac.mp3"></audio>
+        <audio autoplay hidden src="asset/nhac.mp3"></audio>
+
     </div>
     <script>
         var textBox = document.querySelector('.text-box')
-        setInterval(() => {
-            textBox.innerHTML =`<h4> ❤️ </h4>
-        <audio controls autoplay hidden src="asset/nhac.mp3"></audio>`
-        }, 18000);
+        var audio = document.querySelector('audio')
+        document.onclick = () => {
+          audio.play();
+        }
     </script>
  </BODY>
 </HTML>html
